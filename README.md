@@ -3,4 +3,4 @@
 
 ## License
 
-This template is provided for personal and educational use only. Any other use, copying, modification, or distribution of this template is strictly prohibited without the express written permission of the copyright holder. For permission requests, please contact [Your Contact Information].
+This template is provided for personal and educational use only. Any other use, copying, modification, or distribution of this template is strictly prohibited without the express written permission of the copyright holder. For permission requests, please contact filip.jaskovic@gym-nd.at.
