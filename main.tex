@@ -1,3 +1,4 @@
+%!TEX program = xelatex
 \documentclass[a4paper,notitlepage,11pt]{article}
 \usepackage[a4paper, left=2.5cm, right=2.5cm, bottom=2.5cm, top=2.5cm, bindingoffset=1cm]{geometry}
 \usepackage{caption}
@@ -40,6 +41,8 @@
 
 \titlespacing{\subsubsection}{0pt}{\parskip}{0.2\parskip}
 
+\titlespacing{\paragraph}{0pt}{\parskip}{0.2\parskip}
+
 \onehalfspacing
 \setlength{\parindent}{0pt}
 
@@ -55,7 +58,11 @@
 \setlength{\cftbeforesecskip}{-0.2em}
 \setlength{\cftbeforesubsecskip}{-0.2em}
 
-\titleformat{\paragraph}[runin]{\normalfont\normalsize}{\theparagraph}{1em}{}
+\titleformat{\paragraph}
+  {\dinregular\normalsize}
+  {\theparagraph}
+  {1em}
+  {}
 
 
 \usepackage{fontspec}
@@ -67,13 +74,19 @@
 \usepackage{setspace}
 \setstretch{1.5}
 \usepackage{fontspec}
+\hyphenpenalty=10000
 
 \setmainfont[
   Path = {RPfonts/},
+  UprightFont = DINOffc-Light.ttf,
   BoldFont = DINOffc-Bold.ttf,
-  ItalicFont = DINOffc-Ita.ttf,
+  ItalicFont = DINOffc-LightIta.ttf,
   BoldItalicFont = DINOffc-BoldIta.ttf,
 ]{DINOffc}
+
+\newfontface{\dinregular}[
+  Path = {RPfonts/},
+]{DINOffc.ttf}
 
 \renewcommand{\cftsecfont}{\normalfont}
 \renewcommand{\cftsecpagefont}{\normalfont}
@@ -90,6 +103,8 @@
 \titleformat{\subsection}{\normalfont\fontsize{13}{14}\bfseries}{\thesubsection}{1em}{}
 
 \titleformat{\subsubsection}{\normalfont\fontsize{11}{13}\bfseries}{\thesubsubsection}{1em}{}
+
+\titleformat{\subsubsubsection}{\dinregular\fontsize{11}{13}\bfseries}{\thesubsubsubsection}{1em}{}
 
 \renewcommand{\cftfigpresnum}{Abbildung}
 \settowidth{\cftfignumwidth}{Abbildung 4\quad}

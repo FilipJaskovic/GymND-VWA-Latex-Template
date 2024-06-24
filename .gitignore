@@ -1,2 +1,14 @@
 
 .DS_Store
+main.xdv
+main.toc
+main.synctex.gz
+main.out
+main.lot
+main.log
+main.lof
+main.fls
+main.fdb_latexmk
+main.blg
+main.bbl
+main.aux
