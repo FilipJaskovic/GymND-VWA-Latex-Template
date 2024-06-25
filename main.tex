@@ -51,20 +51,31 @@
 
 \usepackage{tocloft}
 
+
 \usepackage{tocloft}
 
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftdot}{.}  % Use a single dot instead of \ldots
-\renewcommand{\cftdotsep}{0.5}  % Adjust this value to control spacing between dots
+\renewcommand{\cftdotsep}{0.1}  % Adjust this value to control spacing between dots
 
-\setlength{\cftbeforesecskip}{-0.4em}
-\setlength{\cftbeforesubsecskip}{-0.4em}
+% Set the line spacing to be even
+\setlength{\cftbeforesecskip}{-0.3em}
+\setlength{\cftbeforesubsecskip}{-0.3em}
+\setlength{\cftbeforesubsubsecskip}{-0.3em}
+\setlength{\cftbeforeparaskip}{-0.3em}
 
 % Set the indentations to half their default values
-\setlength{\cftsubsecindent}{0.5\cftsubsecindent}
+\setlength{\cftsecindent}{0.5\cftsecindent}
 \setlength{\cftsubsecindent}{0.5\cftsubsecindent}
 \setlength{\cftsubsubsecindent}{0.5\cftsubsubsecindent}
 \setlength{\cftparaindent}{0.5\cftparaindent}
+
+\setlength{\cftsecnumwidth}{2.5em}
+\setlength{\cftsubsecnumwidth}{3.5em}
+\setlength{\cftsubsubsecnumwidth}{4.5em}
+\setlength{\cftparanumwidth}{4.5em}
+
+
 \titleformat{\paragraph}
   {\dinregular\normalsize}
   {\theparagraph}
@@ -109,7 +120,7 @@
 
 \titleformat{\subsection}{\normalfont\fontsize{13}{14}\bfseries}{\thesubsection}{1em}{}
 
-\titleformat{\subsubsection}{\normalfont\fontsize{11}{13}\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\fontsize{11}{13}\bfseries}{\thesubsubsection}{0.5em}{}
 
 \titleformat{\subsubsubsection}{\dinregular\fontsize{11}{13}\bfseries}{\thesubsubsubsection}{1em}{}
 
