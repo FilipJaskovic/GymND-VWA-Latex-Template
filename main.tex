@@ -51,13 +51,20 @@
 
 \usepackage{tocloft}
 
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftdot}{\ensuremath{\cdot}}
-\renewcommand{\cftdotsep}{0.8}
-\renewcommand{\cftdot}{\ensuremath{\ldots}}
-\setlength{\cftbeforesecskip}{-0.2em}
-\setlength{\cftbeforesubsecskip}{-0.2em}
+\usepackage{tocloft}
 
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftdot}{.}  % Use a single dot instead of \ldots
+\renewcommand{\cftdotsep}{0.5}  % Adjust this value to control spacing between dots
+
+\setlength{\cftbeforesecskip}{-0.4em}
+\setlength{\cftbeforesubsecskip}{-0.4em}
+
+% Set the indentations to half their default values
+\setlength{\cftsubsecindent}{0.5\cftsubsecindent}
+\setlength{\cftsubsecindent}{0.5\cftsubsecindent}
+\setlength{\cftsubsubsecindent}{0.5\cftsubsubsecindent}
+\setlength{\cftparaindent}{0.5\cftparaindent}
 \titleformat{\paragraph}
   {\dinregular\normalsize}
   {\theparagraph}
@@ -111,7 +118,6 @@
 
 \renewcommand{\cfttabpresnum}{Tabelle}
 \settowidth{\cfttabnumwidth}{Tabelle 15\quad}
-
 
 
 
